@@ -145,6 +145,8 @@ def main():
                 missing.append("Three phases: introduction, conflict/development, resolution.")
             if not enough_chars:
                 missing.append("At least 3 distinct characters.")
+            if not length_ok:
+                missing.append("Length STRICTLY between 450 and 550 words.")
             logging.warning(f"Story validation failed. Missing: {', '.join(missing)}")
             
     print("Final Story:\n", story)
