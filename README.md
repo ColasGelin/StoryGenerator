@@ -31,10 +31,14 @@ A simple Python script that generates a short story based on user-defined parame
 
 Run the script with the following command:
 ```bash
-python3 story_generator.py --theme <theme> --age-range <age_range> --tone <tone> --characters <character1> <character2> <character3>
+python3 story_generator.py --theme <theme> --age-range <age_range> --tone <tone> --characters <character1> <character2> <character3> [--test-mode]
 ```
 
 Example:
 ```bash
-python3 story_generator.py --theme forest --age-range 3-5 --tone Educational --characters Alice Bob Charlie
+python3 story_generator.py --theme forest --age-range 3-5 --tone Educational --characters Alice Bob Charlie --test-mode
 ```
+
+### Test Mode
+
+Use the `--test-mode` flag to run the script in validation test mode. In this mode, the story will be generated without applying the validation requirements, allowing you to test the validation logic separately.
